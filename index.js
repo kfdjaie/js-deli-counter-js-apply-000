@@ -1,9 +1,10 @@
 var katzDeli = [];
 var katzDeliLine = [];
-function takeANumber(deliLine, custName){
- deliLine.push(custName);
-  var katzDeliPos = deliLine.indexOf(custName) + 1;
-  return "Welcome, " + custName + ". You are number " + katzDeliPos + " in line.";
+var katzDeliPos = 0;
+function takeANumber(deliLine){
+ deliLine.push(deliLine.length + 1);
+ katzDeliPos++; 
+  return "Welcome. You are number " + katzDeliPos;
 }
 
 function nowServing (deliLine){
